@@ -1,0 +1,16 @@
+<!DOCTYPE html><html lang=""><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="/artplay/favicon.ico"><script src="https://cdn.jsdelivr.net/gh/nearprotocol/near-api-js/dist/near-api-js.js"></script><title>web</title><link href="/artplay/css/app.04dafa3e.css" rel="preload" as="style"><link href="/artplay/js/app.cb97912b.js" rel="preload" as="script"><link href="/artplay/js/chunk-vendors.d6fd86ae.js" rel="preload" as="script"><link href="/artplay/css/app.04dafa3e.css" rel="stylesheet"></head><body><noscript><strong>We're sorry but web doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id="app"></div><script>// configure minimal network settings and key storage
+      const config = {
+        nodeUrl: "https://rpc.testnet.near.org",
+        deps: {
+          keyStore: new nearApi.keyStores.BrowserLocalStorageKeyStore(),
+        },
+      };
+
+      // open a connection to the NEAR platform
+      (async function () {
+        window.near = await nearApi.connect(config);
+
+        // ---------------------------------------------------------------------------
+        // here you have access to `near-api-js` and a valid connection object `near`
+        // ---------------------------------------------------------------------------
+      })(window);</script><script src="/artplay/js/chunk-vendors.d6fd86ae.js"></script><script src="/artplay/js/app.cb97912b.js"></script></body></html>
